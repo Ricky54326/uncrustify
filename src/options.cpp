@@ -1364,6 +1364,8 @@ void register_options(void)
                   "Control whether to indent the code between #if, #else and #endif.");
    unc_add_option("pp_define_at_level", UO_pp_define_at_level, AT_BOOL,
                   "Whether to indent '#define' at the brace level (true) or from column 1 (false)");
+   unc_add_option("pp_enforce_code_width", UO_pp_enforce_code_width, AT_BOOL,
+                  "Whether to enforce code_width for preprocessors");
 }
 
 

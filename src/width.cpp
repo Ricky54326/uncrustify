@@ -58,6 +58,7 @@ void do_code_width(void)
    {
       if (!chunk_is_newline(pc) &&
           !chunk_is_comment(pc) &&
+          (chunk_is_preproc(pc) && cpd.settings[UO_pp_enforce_code_width].b) &&
           (pc->type != CT_SPACE) &&
           is_past_width(pc))
       {
